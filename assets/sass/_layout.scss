@@ -2,7 +2,7 @@ header {
   background-color: green;
 }
 
-main {
+#content {
   background-color: red;
 }
 
@@ -14,3 +14,28 @@ footer {
   background-color: purple;
 }
 
+@media screen and (min-width: 768px) {
+  nav {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+  }
+  #content {
+    float: left;
+    width: 68%;
+  }
+  main {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  header,
+  main,
+  footer{
+    margin: 0 auto;
+    max-width: 960px;
+  }
+}
